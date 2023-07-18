@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+.card{
+  width: 18rem;
+  height: 21rem;
+  /* width: 400px;
+  height: 600px; */
+}
+
+
+
+.card-img-top{
+  height: 250px;
+}
+
+h3{
+  color: rgb(49, 29, 82);
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+p{
+    color: rgb(49, 29, 82);
+}
+
+.card-deck{
+  margin-left: 7%;
+}
+
+a {
+  text-decoration: none !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+}
+.card{
+  background-color: rgb(239, 229, 241);
+}
+

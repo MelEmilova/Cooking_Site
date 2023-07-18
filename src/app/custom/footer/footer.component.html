@@ -1,0 +1,84 @@
+<footer id="footer" class="text-center py-2 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-12">
+
+      <div class="col-md-3">
+      </div>
+
+      <div class="col-md-6">
+        <a routerLink="" class="btn text-white btn-lg">HOME</a>
+        <a routerLink="/about-us" class="btn text-white btn-lg">ABOUT US</a>
+        <a routerLink="/contact-us" class="btn text-white btn-lg" data-toggle="modal"
+          data-target="#contactWithUs">CONTACT US</a>
+      </div>
+
+      <div class="col-md-3"> </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Copyright &copy;
+          <span id="year">2023</span>
+          TASTY and EASY
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- MODAL contactWithUs -->
+<!-- Да го изнеса в самопстоятелен компонент -->
+<div class="modal fade" id="contactWithUs">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">Contact Us</h5>
+        <button class="close" data-dismiss="modal">x</button>
+      </div>
+
+      <div class="modal-body">
+        <form action="">
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <fa-icon [icon]="faUser"></fa-icon>
+              </span>
+            </div>
+            <input type="text" placeholder="Name" class="form-control">
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <fa-icon [icon]="faEnvelopeOpen"></fa-icon>
+
+              </span>
+            </div>
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <fa-icon [icon]="faPaperPlane"></fa-icon>
+              </span>
+            </div>
+            <textarea type="text" placeholder="Message" class="form-control" rows="5"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success btn-block" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+</script>

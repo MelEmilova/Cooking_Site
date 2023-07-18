@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+.sectionStyle{
+    background: linear-gradient(90deg, rgba(76,43,129, 1) 0%, rgb(200, 191, 233) 50%, rgba(76,43, 129, 1) 100%);
+      box-shadow: 1px 0px 28px 0px rgb(34, 14, 53);
+      height: 400px;
+      margin: 0 auto;
+      margin-bottom: 67px;
+      border: none;
+      border-radius: 20px;
+      border: 2px solid;
+      height: 520px;
+}
+
+form{
+    background: rgb(76, 43, 129);
+      position: relative;
+      border-radius: 20px;
+}
+
+.logInStyle{
+  font-family: 'Josefin Sans', sans-serif;
+  color: whitesmoke;
+}
+
+.btn{
+  border: 2px solid white;
+  color: white;
+}
+ .btn:hover{
+  background-color: rgb(206, 191, 233);
+  color: rgb(37, 20, 63);
+ }

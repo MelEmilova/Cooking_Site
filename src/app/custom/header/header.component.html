@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-sm navbar-dark bgnav no-gutters">
+  <div class="container-fluid">
+    <div class="d-none d-lg-block">
+      <a href="#" class="navbar-brand">TASTY <span class="andStyle">&</span> EASY
+        <img src="assets/logo/лого.png" class="img-fluid  logoStyle mb-2" style="width: 60px;" alt="">
+        <p class="guideStyle">guide for beginners</p>
+      </a>
+    </div>
+    <div class="d-none d-sm-block  d-md-block d-lg-none d-xl-none">
+      <a href="#" class="navbar-brand">TASTY <span class="andStyle">and</span> EASY
+      </a>
+    </div>
+
+    <div class="d-block d-sm-none">
+      <img src="assets/logo/лого.png" class="img-fluid logoStyle" style="width: 60px;" alt="">
+    </div>
+
+
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a routerLink="#" class="nav-link text-white">ALL RECIPE</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="#" class="nav-link text-white" data-toggle="modal" data-target="#findeRecipe">FIND RECIPE</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="#" class="nav-link text-white">CREATE RECIPE</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="#" class="nav-link text-white ">LOGOUT</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/login" class="nav-link  text-white">LOG IN</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/register" class="nav-link text-white">REGISTER</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- MODAL Find Recipe -->
+<!-- Да го изнеса в самопстоятелен компонент -->
+<div class="modal fade" id="findeRecipe">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bgfind text-white">
+        <h5 class="modal-title">Select products and find recipes</h5>
+        <button class="close" data-dismiss="modal">x</button>
+      </div>
+
+      <div class="modal-body">
+
+
+        <form action="" class="p-2">
+          <!-- <h4 class="displey-4">Category products/h4> -->
+          <div class="form-row mb-2">
+            <div class="form-group col-md-6">
+              <label for="meat">Meat</label>
+              <select class="form-control">
+                <option value="MEAT"></option>
+                <option value="Chicken">Chicken</option>
+                <option value="Pork">Pork</option>
+                <option value="Beaf">Beaf</option>
+                <option value="Lamb">Lamb</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="milk">Milk</label>
+              <select class="form-control">
+                <option value="Vegetable"></option>
+                <option value="Potatoes">Potatoes</option>
+                <option value="Zucchini">Zucchini</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Eggplant">Eggplant</option>
+                <option value="Carrots">Carrots</option>
+                <option value="Onions">Onions</option>
+                <option value="Mushrooms">Mushrooms</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="vegetables">Vegetables</label>
+              <select class="form-control">
+                <option value="Dairy"></option>
+                <option value="Feta cheese">Feta cheese</option>
+                <option value="Yellow cheese">Yellow cheese</option>
+                <option value="Yoghurt">Yoghurt</option>
+                <option value="Milk">Milk</option>
+                <option value="Cream">Cream</option>
+                <option value="Cottage cheese">Cottage cheese</option>
+                <option value="Sour cream">Sour cream</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="legumes">Legumes</label>
+              <select class="form-control">
+                <option value="Legumes"></option>
+                <option value="Beans">Beans</option>
+                <option value="Lentils">Lentils</option>
+                <option value="Rice">Rice</option>
+                <option value="Chickpeas">Chickpeas</option>
+                <option value="Corn">Corn</option>
+              </select>
+            </div>
+          </div>
+
+        </form>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn bgfind btn-block text-white" data-dismiss="modal">Search</button>
+      </div>
+    </div>
+  </div>
+</div>

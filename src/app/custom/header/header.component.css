@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Poppins:ital@1&family=Roboto&family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+.bgnav{
+  /* background-color: rgb(59, 14, 131); */
+    background-color: rgb(59, 14, 131);
+    margin-bottom: 2% !important; 
+}
+
+
+
+.nav-link,
+.navbar-brand{
+font-family: 'Josefin Sans', sans-serif;
+color: white;
+}
+
+
+
+ li:hover{
+   transform: scale(1.2s);
+   font-style: oblique;
+   font-weight: 900;
+   background: #d2d3d85e;
+   border-radius: 20%;
+ }
+
+ .andStyle{
+font-family: 'Euphoria Script', cursive;
+font-size:larger;
+color: rgb(211, 198, 18);
+text-shadow: #2125085e;
+font-weight: 500;
+ }
+
+ .guideStyle{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 9px;
+ }
+
+ .logoStyle{
+    transform: rotate(-25deg);
+
+ }
+
+ .colorText{
+  color: white
+ }
+
+
+ /* MODAL */
+ 
+ .modal{
+  margin-top: 8%;
+ }
+ .bgfind{
+    background-color: rgb(76, 43, 129);
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 25px;
+    color: white;
+    
+ }
+ .btn:hover{
+  background-color: rgba(77, 74, 82, 0.288);
+  color: black;
+ }
+
+ .modal-title{
+    /* font-family: 'Nothing You Could Do', cursive; */
+    font-size: 35px;
+    color: white;
+ }
+
+
+ .form-group label,
+ option,
+ select{
+  color: rgb(50, 29, 83);
+  /* font-family: 'Nothing You Could Do', cursive; */
+  font-size: 20px;
+ }
+
+

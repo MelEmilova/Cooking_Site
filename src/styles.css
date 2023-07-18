@@ -1,0 +1,23 @@
+html{
+  background-image: url('./assets/background/wood-2142241_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    background: rgba(220, 226, 220, 0.473)
+}
+/* 
+.transparent {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+
+
+
+@media only screen and (max-width: 980px) {
+  body {
+    background-image: url('./assets/background/wood-2142241_1920.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}

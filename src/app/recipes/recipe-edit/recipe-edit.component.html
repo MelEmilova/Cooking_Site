@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <h2 class="h-2 text-center">Edit your Recipe</h2>
+
+      <form action="" class="p-5">
+
+        <div class="form-group">
+          <label for="" class="no-gutters styleTitle">Title Recipe</label>
+          <input type="text" class="form-control">
+        </div>
+        <hr>
+
+
+        <div class="form-group">
+          <label for="" class="bgIngridientes styleTitle">Select the main Ingredients</label>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="meat" class="no-gutters">Meat</label>
+              <select class="form-control no-gutters">
+                <option value="MEAT"></option>
+                <option value="Chicken">Chicken</option>
+                <option value="Pork">Pork</option>
+                <option value="Beaf">Beaf</option>
+                <option value="Lamb">Lamb</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="milk" class="no-gutters">Milk</label>
+              <select class="form-control no-gutters">
+                <option value="Vegetable"></option>
+                <option value="Potatoes">Potatoes</option>
+                <option value="Zucchini">Zucchini</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Eggplant">Eggplant</option>
+                <option value="Carrots">Carrots</option>
+                <option value="Onions">Onions</option>
+                <option value="Mushrooms">Mushrooms</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="vegetables" class="no-gutters">Vegetables</label>
+              <select class="form-control no-gutters">
+                <option value="Dairy"></option>
+                <option value="Feta cheese">Feta cheese</option>
+                <option value="Yellow cheese">Yellow cheese</option>
+                <option value="Yoghurt">Yoghurt</option>
+                <option value="Milk">Milk</option>
+                <option value="Cream">Cream</option>
+                <option value="Cottage cheese">Cottage cheese</option>
+                <option value="Sour cream">Sour cream</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="legumes" class="no-gutters">Legumes</label>
+              <select class="form-control no-gutters">
+                <option value="Legumes"></option>
+                <option value="Beans">Beans</option>
+                <option value="Lentils">Lentils</option>
+                <option value="Rice">Rice</option>
+                <option value="Chickpeas">Chickpeas</option>
+                <option value="Corn">Corn</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+
+        <div class="form-group">
+          <label for="image">Upload Image your Recipe</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="image">
+            <label for="" class="custom-file-label">Choose File</label>
+          </div>
+          <small class="text-muted">Max Size 3mb</small>
+        </div>
+        <hr>
+
+        <div class="form-group mb-5" >
+          <label for="body">Preparation</label>
+          <ckeditor data="<p></p>"></ckeditor>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6">
+            <a class="btn bgBtn btn-lg d-block" type="btn">Save Changes</a>
+          </div>
+          <div class="col-md-6">
+            <a class="btn bg-danger btn-lg d-block text-white" type="btn">Close</a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

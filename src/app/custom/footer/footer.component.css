@@ -1,0 +1,15 @@
+
+/* MODAL */
+footer,
+.bgmodal {
+  background-color: rgb(59, 14, 131);
+}
+
+.btn:hover{
+  border: 1px solid whitesmoke;
+}
+
+.modal{
+  margin-top: 3%;
+}
+

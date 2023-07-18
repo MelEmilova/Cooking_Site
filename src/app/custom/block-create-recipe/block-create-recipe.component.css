@@ -1,0 +1,22 @@
+#block-recipe{
+  margin-bottom: 30px;
+}
+
+.card{
+  background-color:rgba(30, 110, 30, 0.822) ;
+  color: aliceblue;
+  border-radius: 2%;
+}
+
+
+.bgTitle{
+    font-family: 'Euphoria Script', cursive;
+      font-size: 110px;
+      font-weight: 100;
+}
+
+.bgp{
+    text-align: center;
+      letter-spacing: 2px;
+      font-size: 15px;
+}
