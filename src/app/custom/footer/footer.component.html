@@ -29,52 +29,7 @@
 
 
 <!-- MODAL contactWithUs -->
-<!-- Да го изнеса в самопстоятелен компонент -->
-<div class="modal fade" id="contactWithUs">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header bg-success text-white">
-        <h5 class="modal-title">Contact Us</h5>
-        <button class="close" data-dismiss="modal">x</button>
-      </div>
-
-      <div class="modal-body">
-        <form action="">
-          <div class="input-group input-group-lg mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <fa-icon [icon]="faUser"></fa-icon>
-              </span>
-            </div>
-            <input type="text" placeholder="Name" class="form-control">
-          </div>
-
-          <div class="input-group input-group-lg mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <fa-icon [icon]="faEnvelopeOpen"></fa-icon>
-
-              </span>
-            </div>
-            <input type="text" placeholder="Email" class="form-control">
-          </div>
-          <div class="input-group input-group-lg mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <fa-icon [icon]="faPaperPlane"></fa-icon>
-              </span>
-            </div>
-            <textarea type="text" placeholder="Message" class="form-control" rows="5"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-success btn-block" data-dismiss="modal">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+<app-contact-us></app-contact-us>
 
 
 

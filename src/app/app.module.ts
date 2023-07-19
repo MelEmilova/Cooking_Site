@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './custom/header/header.component';
 import { FooterComponent } from './custom/footer/footer.component';
 import { AboutUsComponent } from './custom/about-us/about-us.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { RecipeFindComponent } from './recipes/recipe-find/recipe-find.component';
@@ -28,7 +29,8 @@ import { CategoryLegumesListComponent } from './recipes/recipes-category/categor
 import { CKEditorModule } from 'ckeditor4-angular';
 
 
-import { RecipesCategoryComponent } from './recipes/recipes-category/recipes-category.component'
+import { RecipesCategoryComponent } from './recipes/recipes-category/recipes-category.component';
+import { ContactUsComponent } from './custom/contact-us/contact-us.component'
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { RecipesCategoryComponent } from './recipes/recipes-category/recipes-cat
     CategoryMilkListComponent,
     CategoryVegetablesListComponent,
     CategoryLegumesListComponent,
-    RecipesCategoryComponent
+    RecipesCategoryComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
