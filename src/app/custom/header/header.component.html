@@ -1,21 +1,22 @@
 <nav class="navbar navbar-expand-sm navbar-dark bgnav no-gutters">
   <div class="container-fluid">
-    <div class="d-none d-lg-block">
-      <a href="#" class="navbar-brand">TASTY <span class="andStyle">&</span> EASY
-        <img src="assets/logo/лого.png" class="img-fluid  logoStyle mb-2" style="width: 60px;" alt="">
-        <p class="guideStyle">guide for beginners</p>
-      </a>
-    </div>
-    <div class="d-none d-sm-block  d-md-block d-lg-none d-xl-none">
-      <a href="#" class="navbar-brand">TASTY <span class="andStyle">and</span> EASY
-      </a>
-    </div>
 
-    <div class="d-block d-sm-none">
-      <img src="assets/logo/лого.png" class="img-fluid logoStyle" style="width: 60px;" alt="">
+    <div class="navbar-header">
+      <div class="d-none d-lg-block ">
+        <a href="#" class="navbar-brand">TASTY <span class="andStyle">&</span> EASY
+          <img src="assets/logo/лого.png" class="img-fluid  logoStyle mb-2" style="width: 60px;" alt="">
+          <p class="guideStyle">guide for beginners</p>
+        </a>
+      </div>
+      <div class="d-none d-sm-block  d-md-block d-lg-none d-xl-none">
+        <a href="#" class="navbar-brand">TASTY <span class="andStyle">and</span> EASY
+        </a>
+      </div>
+
+      <div class="d-block d-sm-none">
+        <img src="assets/logo/лого.png" class="img-fluid logoStyle" style="width: 60px;" alt="">
+      </div>
     </div>
-
-
 
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
@@ -23,16 +24,19 @@
 
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
+      <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
-          <a routerLink="#" class="nav-link text-white">ALL RECIPE</a>
+          <a routerLink="/all-recipes" class="nav-link text-white">ALL RECIPE</a>
         </li>
         <li class="nav-item">
-          <a routerLink="#" class="nav-link text-white" data-toggle="modal" data-target="#findeRecipe">FIND RECIPE</a>
+          <a  class="nav-link text-white" data-toggle="modal" data-target="#findeRecipe">FIND RECIPE</a>
         </li>
         <li class="nav-item">
-          <a routerLink="#" class="nav-link text-white">CREATE RECIPE</a>
+          <a routerLink="/create-recipe" class="nav-link text-white">CREATE RECIPE</a>
         </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
           <a routerLink="#" class="nav-link text-white ">LOGOUT</a>
         </li>

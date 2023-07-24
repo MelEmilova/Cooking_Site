@@ -9,7 +9,7 @@
       border: none;
       border-radius: 20px;
       border: 2px solid;
-      height: 520px;
+      height: 500px;
 }
 
 form{
@@ -26,6 +26,7 @@ form{
 .btn{
   border: 2px solid white;
   color: white;
+
 }
  .btn:hover{
   background-color: rgb(206, 191, 233);

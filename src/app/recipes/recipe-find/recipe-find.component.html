@@ -2,7 +2,7 @@
 
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header bgfind text-white">
+      <div class="modal-header bgtitle text-white">
         <h5 class="modal-title">Select products and find recipes</h5>
         <button class="close" data-dismiss="modal">x</button>
       </div>
@@ -40,7 +40,8 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="vegetables">Vegetables</label>
-              <select class="form-control">
+              <!-- wzemam value -->
+              <select class="form-control" (input)="printData($event)">
                 <option value="Dairy"></option>
                 <option value="Feta cheese">Feta cheese</option>
                 <option value="Yellow cheese">Yellow cheese</option>

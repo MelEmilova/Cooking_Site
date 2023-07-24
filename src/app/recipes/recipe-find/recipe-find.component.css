@@ -4,7 +4,8 @@
    margin-top: 8%;
  }
 
-.bgfind {
+.bgfind,
+.bgtitle {
   background-color: rgb(76, 43, 129);
   font-family: 'Nothing You Could Do', cursive;
   font-size: 25px;
@@ -21,7 +22,6 @@
   font-size: 35px;
   color: white;
 }
-
 
 .form-group label,
 option,
