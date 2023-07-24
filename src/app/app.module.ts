@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -32,7 +32,11 @@ import { RecipesCategoryComponent } from './recipes/recipes-category/recipes-cat
 import { ContactUsComponent } from './custom/contact-us/contact-us.component';
 import { HomeComponent } from './custom/home/home.component'
 
+
+
+
 import {routes} from '../app/app-routing-path'
+import { LoadingInterceptor } from './loader/loading.interceptor';
 
 
 @NgModule({
@@ -70,7 +74,11 @@ import {routes} from '../app/app-routing-path'
     CKEditorModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+     {
+      provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

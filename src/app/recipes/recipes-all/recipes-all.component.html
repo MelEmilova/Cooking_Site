@@ -1,13 +1,14 @@
 <div class="container">
+  <app-loader></app-loader>
   <h4 class="display-4 lead text-center mb-4">All Recipes</h4>
   <div class="card-deck">
 
 
-    <!-- Towa si e ordelen Component -->
+    <!-- Towa si e otdelen Component -->
     <div class="col-md-3-mr-5  mb-5" *ngFor="let recipe of result">
       <a routerLink="">
         <div class="card">
-          <img class="card-img-top" src="./assets/test-img/2.png" alt="">
+          <img class="card-img-top card-fluid" src="{{ recipe.imageUrl }}" alt="">
           <div class="card-body">
             <p class="card-text">{{ recipe.title }}
             </p>
@@ -17,7 +18,5 @@
     </div>
 
 
-
-    <app-recipe-card [recipes]=result></app-recipe-card>
   </div>
 </div>

@@ -1,10 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { LoaderService } from '../services/loader.service'
 
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
-  styleUrls: ['./loader.component.css']
+  styleUrls: ['./loader.component.css'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class LoaderComponent {
-  @Input() isLoading: boolean
+  constructor(public loader: LoaderService) { }
 }
