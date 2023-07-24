@@ -37,6 +37,7 @@ import { HomeComponent } from './custom/home/home.component'
 
 import {routes} from '../app/app-routing-path'
 import { LoadingInterceptor } from './loader/loading.interceptor';
+import { NoRecipeComponent } from './custom/no-recipe/no-recipe.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { LoadingInterceptor } from './loader/loading.interceptor';
     CategoryLegumesListComponent,
     RecipesCategoryComponent,
     ContactUsComponent,
-    HomeComponent
+    HomeComponent,
+    NoRecipeComponent
   ],
   imports: [
     BrowserModule,

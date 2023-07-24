@@ -7,6 +7,9 @@ import { RegisterComponent } from './authentication/register/register.component'
 import { createComponent } from '@angular/core';
 import { RecipeCreateComponent } from './recipes/recipe-create/recipe-create.component';
 import { CategoryMeatListComponent } from './recipes/recipes-category/category-meat-list/category-meat-list.component';
+import { CategoryMilkListComponent } from './recipes/recipes-category/category-milk-list/category-milk-list.component';
+import { CategoryLegumesListComponent } from './recipes/recipes-category/category-legumes-list/category-legumes-list.component';
+import { CategoryVegetablesListComponent } from './recipes/recipes-category/category-vegetables-list/category-vegetables-list.component';
 
 
 export const routes: Routes = [
@@ -40,7 +43,20 @@ export const routes: Routes = [
     {
       path: 'recipe-meat',
       component: CategoryMeatListComponent
+    },
+    {
+      path: 'recipe-dairy',
+      component: CategoryMilkListComponent
+    },
+    {
+      path: 'recipe-legumes',
+      component: CategoryLegumesListComponent
+    },
+    {
+      path: 'recipe-vegetables',
+      component: CategoryVegetablesListComponent
     }
+
 ]
 
 

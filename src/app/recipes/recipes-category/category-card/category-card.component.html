@@ -1,50 +1,18 @@
-<div class="row mx-auto mb-4 ">
+<div class="row mx-auto mb-4 " *ngFor="let recipe of listRecipeByCategory">
   <div class="col-sm-3 col-xs-3 p-2">
-    <a href="">
-      <img src="./assets/test-img/2.png" alt="" class="img-fluid">
+    <a href="" >
+      <img src="{{ recipe.imageUrl }}" alt="" class="img-fluid">
     </a>
   </div>
   <div class="col-sm-9 col-xs-8 p-4">
     <a href="">
-      <h4>lgtkömhÖLc gft,h;LÖg. fhgftr</h4>
+      <h4>{{ recipe.title }}</h4>
     </a>
     <hr>
-    <div class="ower">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod praesentium qui possimus?
-      Commodi vel
-      cumque quos natus iure similique?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur provident, cupiditate vitae laboriosam
-      necessitatibus dignissimos excepturi porro, quod voluptas, odio voluptates autem sint velit aut aspernatur soluta
-      suscipit. Libero.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae, commodi hic et maxime voluptates minus
-      nulla dolorem! Dolores in aspernatur cupiditate, esse aliquid molestiae veniam debitis quae, modi porro iure
-      perspiciatis voluptate aliquam fuga corporis perferendis omnis voluptatem distinctio. Quis, mollitia provident!
-      Magni unde explicabo aspernatur dolore, eum dignissimos.
+    <div class="ower">{{ recipe.description }}
     </div>
   </div>
 </div>
 
-<div class="row mx-auto mb-4">
-  <div class="col-sm-3 col-xs-3 p-2">
-    <a href="">
-      <img src="./assets/test-img/3.png" alt="" class="img-fluid">
-    </a>
-  </div>
-  <div class="col-sm-9 col-xs-8 p-4">
-    <a href="">
-      <h4>lgtkömhÖLc gft,h;LÖg. fhgftr</h4>
-    </a>
-    <hr>
-    <div class="ower">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod praesentium qui possimus?
-      Commodi vel
-      cumque quos natus iure similique?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur provident, cupiditate vitae laboriosam
-      necessitatibus dignissimos excepturi porro, quod voluptas, odio voluptates autem sint velit aut aspernatur soluta
-      suscipit. Libero.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae, commodi hic et maxime voluptates minus
-      nulla dolorem! Dolores in aspernatur cupiditate, esse aliquid molestiae veniam debitis quae, modi porro iure
-      perspiciatis voluptate aliquam fuga corporis perferendis omnis voluptatem distinctio. Quis, mollitia provident!
-      Magni unde explicabo aspernatur dolore, eum dignissimos.
-    </div>
-  </div>
-</div>
+
 

@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-h4,
-.d-flex {
-color: rgb(49, 29, 82);
-font-family: 'Kalam', cursive;
-margin-left: 10%;
-}
 
-.d-flex{
+
+.d-flex {
   font-size: 50px;
   color: red;
+  font-family: 'Kalam', cursive;
+  margin-left: 10%;
 }
-

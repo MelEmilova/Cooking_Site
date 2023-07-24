@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RecipeModel } from 'src/app/models/recipe-details/recipe.model';
+import { RecipesService } from 'src/app/services/recipes.service.service';
 
 @Component({
   selector: 'app-recipes-category',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipes-category.component.css']
 })
 export class RecipesCategoryComponent {
+
+  result: any
+  noRecipe: boolean = false;
+    @Input('recipe') recipe: RecipeModel
+
+  constructor(private recipeServisec: RecipesService){}
+
+
+
+  
+
+
 
 }
