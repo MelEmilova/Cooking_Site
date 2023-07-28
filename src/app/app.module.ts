@@ -45,6 +45,9 @@ import { LegumesProductsComponent } from './recipes/recipe-find/legumes-products
 import { PastaProductsComponent } from './recipes/recipe-find/pasta-products/pasta-products.component';
 import { FruitsProductsComponent } from './recipes/recipe-find/fruits-products/fruits-products.component';
 import { EggsProductsComponent } from './recipes/recipe-find/eggs-products/eggs-products.component';
+import { CategoryFruitsListComponent } from './recipes/recipes-category/category-fruits-list/category-fruits-list.component';
+import { CategoryPastaListComponent } from './recipes/recipes-category/category-pasta-list/category-pasta-list.component';
+import { CategoryEggsListComponent } from './recipes/recipes-category/category-eggs-list/category-eggs-list.component';
 
 
 @NgModule({
@@ -79,7 +82,10 @@ import { EggsProductsComponent } from './recipes/recipe-find/eggs-products/eggs-
     LegumesProductsComponent,
     PastaProductsComponent,
     FruitsProductsComponent,
-    EggsProductsComponent
+    EggsProductsComponent,
+    CategoryFruitsListComponent,
+    CategoryPastaListComponent,
+    CategoryEggsListComponent
   ],
   imports: [
     BrowserModule,

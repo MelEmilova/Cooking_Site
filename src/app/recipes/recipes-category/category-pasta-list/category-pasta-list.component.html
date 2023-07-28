@@ -1,0 +1,7 @@
+<div class="container">
+  <h4 class="display-4 lead ">All Pasta Recipes</h4>
+
+  <app-no-recipe *ngIf="noRecipe"></app-no-recipe>
+  <app-category-card *ngIf="!noRecipe" [listRecipeByCategory]="result"></app-category-card>
+
+</div>

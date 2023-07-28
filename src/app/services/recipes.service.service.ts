@@ -17,6 +17,9 @@ export class RecipesService {
     getAllRecipe(): Observable<Object> {
     return this.http.get<any>(`${this.path}all-recipes`)
   }
+
+
+
     getAllMeatRecipes() :Observable<Object>{
     return this.http.get<any>(`${this.path}find-recipe-meat`)
   }
@@ -29,6 +32,16 @@ export class RecipesService {
     getAllVegetablesRecipes() :Observable<Object>{
     return this.http.get<any>(`${this.path}find-recipe-vegetables`)
   }
+    getAllFruitsRecipes() :Observable<Object>{
+    return this.http.get<any>(`${this.path}find-recipe-fruits`)
+  }
+    getAllPastaRecipes() :Observable<Object>{
+    return this.http.get<any>(`${this.path}find-recipe-pasta`)
+  }
+    getAllEggsRecipes() :Observable<Object>{
+    return this.http.get<any>(`${this.path}find-recipe-eggs`)
+  }
+
 
 
 

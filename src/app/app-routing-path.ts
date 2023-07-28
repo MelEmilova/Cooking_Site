@@ -10,6 +10,9 @@ import { CategoryMeatListComponent } from './recipes/recipes-category/category-m
 import { CategoryMilkListComponent } from './recipes/recipes-category/category-milk-list/category-milk-list.component';
 import { CategoryLegumesListComponent } from './recipes/recipes-category/category-legumes-list/category-legumes-list.component';
 import { CategoryVegetablesListComponent } from './recipes/recipes-category/category-vegetables-list/category-vegetables-list.component';
+import { CategoryFruitsListComponent } from './recipes/recipes-category/category-fruits-list/category-fruits-list.component';
+import { CategoryPastaListComponent } from './recipes/recipes-category/category-pasta-list/category-pasta-list.component';
+import { CategoryEggsListComponent } from './recipes/recipes-category/category-eggs-list/category-eggs-list.component';
 
 
 export const routes: Routes = [
@@ -24,6 +27,8 @@ export const routes: Routes = [
       path: 'all-recipes',
       component: RecipesAllComponent
     },
+
+
     {
       path: 'about-us',
       component: AboutUsComponent
@@ -36,10 +41,16 @@ export const routes: Routes = [
       path: 'register',
       component: RegisterComponent
     },
+
+
+
     {
       path: 'create-recipe',
       component: RecipeCreateComponent
     },
+
+
+
     {
       path: 'recipe-meat',
       component: CategoryMeatListComponent
@@ -55,7 +66,21 @@ export const routes: Routes = [
     {
       path: 'recipe-vegetables',
       component: CategoryVegetablesListComponent
+    },
+    {
+      path: 'recipe-fruits',
+      component: CategoryFruitsListComponent
+    },
+    {
+      path: 'recipe-pasta',
+      component: CategoryPastaListComponent
+    },
+    {
+      path: 'recipe-eggs',
+      component: CategoryEggsListComponent
     }
+
+
 
 ]
 
