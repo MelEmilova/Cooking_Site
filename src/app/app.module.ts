@@ -38,6 +38,13 @@ import { HomeComponent } from './custom/home/home.component'
 import {routes} from '../app/app-routing-path'
 import { LoadingInterceptor } from './loader/loading.interceptor';
 import { NoRecipeComponent } from './custom/no-recipe/no-recipe.component';
+import { MeatProductsComponent } from './recipes/recipe-find/meat-products/meat-products.component';
+import { VegetableProductsComponent } from './recipes/recipe-find/vegetable-products/vegetable-products.component';
+import { DairyProductsComponent } from './recipes/recipe-find/dairy-products/dairy-products.component';
+import { LegumesProductsComponent } from './recipes/recipe-find/legumes-products/legumes-products.component';
+import { PastaProductsComponent } from './recipes/recipe-find/pasta-products/pasta-products.component';
+import { FruitsProductsComponent } from './recipes/recipe-find/fruits-products/fruits-products.component';
+import { EggsProductsComponent } from './recipes/recipe-find/eggs-products/eggs-products.component';
 
 
 @NgModule({
@@ -65,7 +72,14 @@ import { NoRecipeComponent } from './custom/no-recipe/no-recipe.component';
     RecipesCategoryComponent,
     ContactUsComponent,
     HomeComponent,
-    NoRecipeComponent
+    NoRecipeComponent,
+    MeatProductsComponent,
+    VegetableProductsComponent,
+    DairyProductsComponent,
+    LegumesProductsComponent,
+    PastaProductsComponent,
+    FruitsProductsComponent,
+    EggsProductsComponent
   ],
   imports: [
     BrowserModule,

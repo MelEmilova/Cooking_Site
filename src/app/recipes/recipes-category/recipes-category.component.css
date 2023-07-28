@@ -17,10 +17,26 @@
   background-image: url('../../../assets/pic-home/legumes.jpg');
 }
 
+.bgfruits{
+  background-image: url('../../../assets/pic-home/fruits.jpg');
+}
+
+.bgpasta{
+  background-image: url('../../../assets/pic-home/pasta4.jpg');
+}
+.bgeggs{
+  background-image: url('../../../assets/pic-home/eggs3.jpg');
+}
+
+
+
 .bgmeat,
 .bgmilk,
 .bgvegetables,
-.bglegumes {
+.bglegumes,
+.bgfruits,
+.bgpasta,
+.bgeggs {
   width: 100%;
   height: 250px;
   background-repeat: no-repeat;
@@ -44,6 +60,4 @@
   border-radius: 10%;
 }
 
-a:hover {
-  background-color: rgba(216, 223, 211, 0.384);
-}
+

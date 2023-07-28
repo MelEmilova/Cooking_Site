@@ -8,64 +8,44 @@
       </div>
 
       <div class="modal-body">
-
-
         <form action="" class="p-2">
+
           <div class="form-row mb-2">
             <div class="form-group col-md-6">
-              <label for="meat">Meat</label>
-              <select class="form-control">
-                <option value="MEAT"></option>
-                <option value="Chicken">Chicken</option>
-                <option value="Pork">Pork</option>
-                <option value="Beaf">Beaf</option>
-                <option value="Lamb">Lamb</option>
-              </select>
+              <app-meat-products (newItemEvent)="addMeatProduct($event)"></app-meat-products>
             </div>
             <div class="form-group col-md-6">
-              <label for="milk">Milk</label>
-              <select class="form-control">
-                <option value="Vegetable"></option>
-                <option value="Potatoes">Potatoes</option>
-                <option value="Zucchini">Zucchini</option>
-                <option value="Tomato">Tomato</option>
-                <option value="Eggplant">Eggplant</option>
-                <option value="Carrots">Carrots</option>
-                <option value="Onions">Onions</option>
-                <option value="Mushrooms">Mushrooms</option>
-              </select>
+              <app-vegetable-products (newItemEvent)="addVegetablesProduct($event)"></app-vegetable-products>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="vegetables">Vegetables</label>
-              <!-- wzemam value -->
-              <select class="form-control" (input)="printData($event)">
-                <option value="Dairy"></option>
-                <option value="Feta cheese">Feta cheese</option>
-                <option value="Yellow cheese">Yellow cheese</option>
-                <option value="Yoghurt">Yoghurt</option>
-                <option value="Milk">Milk</option>
-                <option value="Cream">Cream</option>
-                <option value="Cottage cheese">Cottage cheese</option>
-                <option value="Sour cream">Sour cream</option>
-              </select>
+              <app-dairy-products (newItemEvent)="addDairyProduct($event)"></app-dairy-products>
             </div>
             <div class="form-group col-md-6">
-              <label for="legumes">Legumes</label>
-              <select class="form-control">
-                <option value="Legumes"></option>
-                <option value="Beans">Beans</option>
-                <option value="Lentils">Lentils</option>
-                <option value="Rice">Rice</option>
-                <option value="Chickpeas">Chickpeas</option>
-                <option value="Corn">Corn</option>
-              </select>
+              <app-legumes-products (newItemEvent)="addLegumesProduct($event)"></app-legumes-products>
             </div>
           </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <app-pasta-products (newItemEvent)="addPastaProduct($event)"></app-pasta-products>
+            </div>
+            <div class="form-group col-md-6">
+              <app-fruits-products (newItemEvent)="addFruitsProduct($event)"></app-fruits-products>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6 mx-auto">
+              <app-eggs-products (newItemEvent)="addEggsProduct($event)"></app-eggs-products>
+            </div>
+          </div>
+
           <div class="modal-footer">
-            <button class="btn bgfind btn-block text-white" data-dismiss="modal">Search</button>
+            <button class="btn bgfind btn-block text-white" data-dismiss="modal"
+              (click)="onSelectedProducts()">Search</button>
           </div>
         </form>
 

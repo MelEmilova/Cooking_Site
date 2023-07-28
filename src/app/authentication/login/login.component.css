@@ -32,3 +32,9 @@ form{
   background-color: rgb(206, 191, 233);
   color: rgb(37, 20, 63);
  }
+
+ .btnStyle{
+  margin-top: 5%;
+  background-color: rgb(59, 14, 131);
+  border: none !important;
+ }
