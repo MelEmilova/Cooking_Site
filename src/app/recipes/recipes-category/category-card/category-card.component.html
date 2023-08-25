@@ -1,11 +1,11 @@
 <div class="row mx-auto mb-4 " *ngFor="let recipe of listRecipeByCategory">
   <div class="col-sm-3 col-xs-3 p-2">
-    <a href="" >
+    <a routerLink="/details-recipe/{{ recipe._id }}">
       <img src="{{ recipe.imageUrl }}" alt="" class="img-fluid">
     </a>
   </div>
   <div class="col-sm-9 col-xs-8 p-4">
-    <a href="">
+    <a routerLink="/details-recipe/{{ recipe._id }}">
       <h4>{{ recipe.title }}</h4>
     </a>
     <hr>

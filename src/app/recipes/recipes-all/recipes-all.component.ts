@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RecipeModel } from 'src/app/models/recipe-details/recipe.model';
+import { RecipeModel } from 'src/app/models/recipe-madels/recipe.model';
 import { RecipesService } from 'src/app/services/recipes.service.service';
 
 @Component({
@@ -10,10 +10,9 @@ import { RecipesService } from 'src/app/services/recipes.service.service';
 
 export class RecipesAllComponent {
   result: any
+  
   @Input('recipe') recipe: RecipeModel
 
- 
-// result: any
 
  constructor(private recipeServisec: RecipesService){}
 
@@ -22,7 +21,7 @@ export class RecipesAllComponent {
     .getAllRecipe()
     .subscribe(data => {
       this.result = data
-      console.log(this.result)
+      console.log('All recipes', this.result)
     });
  }
 }

@@ -13,6 +13,8 @@ import { CategoryVegetablesListComponent } from './recipes/recipes-category/cate
 import { CategoryFruitsListComponent } from './recipes/recipes-category/category-fruits-list/category-fruits-list.component';
 import { CategoryPastaListComponent } from './recipes/recipes-category/category-pasta-list/category-pasta-list.component';
 import { CategoryEggsListComponent } from './recipes/recipes-category/category-eggs-list/category-eggs-list.component';
+import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 
 export const routes: Routes = [
@@ -26,6 +28,14 @@ export const routes: Routes = [
     {
       path: 'all-recipes',
       component: RecipesAllComponent
+    },
+    {
+      path: 'details-recipe/:id',
+      component: RecipeDetailsComponent
+    },
+    {
+      path: 'edit-recipe/:id',
+      component: RecipeEditComponent
     },
 
 
@@ -79,6 +89,7 @@ export const routes: Routes = [
       path: 'recipe-eggs',
       component: CategoryEggsListComponent
     }
+   
 
 
 

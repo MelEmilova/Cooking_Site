@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
 
 
 .card{
   background-color: rgba(192, 206, 221, 0.205);
+  border-radius: 1.5%;
+}
+
+h2{
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #titleRecipe{
   background-color: rgba(233, 233, 233, 0.616);
 }
 
-.display-4 {
-  color: rgb(27, 68, 19);
+.display-6 {
+  color: rgb(34,8, 77);
   font-family: 'Kalam', cursive;
 }
 
@@ -28,4 +35,8 @@ color: rgb(34, 8, 77);
 
 #ingredients li{
   border-bottom: 3px solid rgba(161, 148, 167, 0.356);
+}
+
+.authorBg{
+  font-family: 'Titillium Web', sans-serif;
 }

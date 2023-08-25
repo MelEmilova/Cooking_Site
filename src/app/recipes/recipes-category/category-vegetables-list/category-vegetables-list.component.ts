@@ -19,9 +19,7 @@ export class CategoryVegetablesListComponent implements OnInit{
     .subscribe(data => {
       this.result = data
          if(this.result[0] !== null){
-        // console.log('Mel ima')
       }else{
-        // console.log('Nama')
         this.noRecipe = true
       }
     });
